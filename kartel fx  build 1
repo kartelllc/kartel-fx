@@ -1,0 +1,143 @@
+kartel-fx/
+│
+├── index.html <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kartel FX - Forex Broker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Kartel FX</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#accounts">Account Types</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Trade Smart with Kartel FX</h2>
+    <p>Your trusted forex broker. ECN execution, tight spreads, real results.</p>
+    <button onclick="openAccount()">Open Account</button>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Kartel FX is a premier forex brokerage offering top-tier trading conditions and client support worldwide.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>ECN & STP Trading</li>
+      <li>MT5 & WebTrader Platforms</li>
+      <li>Low Spreads & Fast Execution</li>
+      <li>24/7 Customer Support</li>
+    </ul>
+  </section>
+
+  <section id="accounts">
+    <h2>Account Types</h2>
+    <div class="card">
+      <h3>Standard</h3>
+      <p>Great for beginners. Low spreads, no commission.</p>
+    </div>
+    <div class="card">
+      <h3>Pro</h3>
+      <p>Lower spreads, $7 commission/lot. Designed for pros.</p>
+    </div>
+    <div class="card">
+      <h3>VIP</h3>
+      <p>Custom conditions, personal manager. Invite only.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="sendMessage(); return false;">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kartel FX. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+├── style.css <style>{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+  }
+  header {
+    background: #000;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  #hero {
+    background: #111;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  button {
+    padding: 10px 20px;
+    background: gold;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  section {
+    padding: 40px 20px;
+  }
+  .card {
+    background: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-left: 5px solid gold;
+  }
+  form input, form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+└── script.js function openAccount() {
+    alert("Redirecting to account creation... (coming soon)");
+  }
+  
+  function sendMessage() {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+  
+    console.log("Message from", name, email, message);
+    alert("Thanks for your message! We’ll get back to you soon.");
+  }
